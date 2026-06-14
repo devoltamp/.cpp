@@ -6,7 +6,7 @@ int main(){
 
     float x;
     int fieldwidth = cout.width();
-    
+
     cout.width(100);
     cout << "hello there!" << endl;
     cout << fieldwidth << endl;
@@ -19,6 +19,10 @@ int main(){
     cin >> x;
     cout << setw(10) << internal << x << endl;
     /* internal seperates the sign */
+
+    cout.width(10);
+    cout.fill('*');
+    cout << 12 << endl;
 
     return 0;
 }
