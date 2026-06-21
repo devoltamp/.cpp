@@ -37,5 +37,18 @@ int main(){
         while(key != "y" && key != "Y" && key != "n" && key != "N");
     }
 
+    /* insert & erase */
+    string s1("miss summer");
+    s1.insert(5, "ashley ");
+    cout << s1 << endl;
+
+    string s2("the summer-time");
+    s2.erase(4, 7);
+    cout << s2 << endl;
+    /* cut the o/p */
+    s2.erase(3);
+    // s2.erase();
+    cout << s2 << endl;
+
     return 0;
 }
